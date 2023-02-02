@@ -1,0 +1,1167 @@
+Name: UI
+Type: FolderType
+Children:
+- Name: DefaultStyleSheet
+  Id: g=7f98596b18be585bcc866fdc14341f95
+  Type: StyleSheet
+  Children:
+  - Name: ButtonStyle
+    Type: ButtonStyle
+  - Name: ButtonAccentStyle
+    Type: ButtonStyle
+  - Name: DataInputStyle
+    Type: DataInputStyle
+  - Name: SwitchStyle
+    Type: SwitchStyle
+  - Name: GaugeStyle
+    Type: GaugeStyle
+  - Name: NavigationPanelStyle
+    Type: NavigationPanelStyle
+  - Name: ChartStyle
+    Type: ChartStyle
+  - Name: DataListStyle
+    Type: DataListStyle
+  - Name: ToolTipStyle
+    Type: ToolTipStyle
+  - Name: ScrollBarStyle
+    Type: ScrollBarStyle
+  - Name: AccordionStyle
+    Type: AccordionStyle
+  - Name: PieChartStyle
+    Type: PieChartStyle
+  - Name: HistogramChartStyle
+    Type: HistogramChartStyle
+- Name: NativePresentationEngine
+  Type: NativePresentationEngine
+  ReferenceType: HasOrderedComponent
+  Children:
+  - Name: EnableVirtualKeyboard
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: StartWindow
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"9e7e6600519a8eb393246bc50378529e","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":12,"Namespace":3}
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"7f98596b18be585bcc866fdc14341f95","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":447,"Namespace":3}
+  - Name: StartingUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"Id":46,"Namespace":1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":14,"Namespace":1}
+  - Name: Sessions
+    Type: BaseObjectType
+- Name: MainWindow
+  Id: g=9e7e6600519a8eb393246bc50378529e
+  Supertype: Window
+  Children:
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1200.0
+  - Name: Height
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 700.0
+  - Name: XYChart1
+    Type: XYChart
+    Children:
+    - Name: Pens
+      Type: BaseObjectType
+      Children:
+      - Name: ArrayLinePen1
+        Type: XYChartArrayLinePen
+        Children:
+        - Name: PointArray
+          Type: BaseDataVariableType
+          DataType: Number
+          ValueRank: 2
+          ArrayDimensions: [0,0]
+          Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Editable
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ModellingRule: Optional
+          Value: false
+    - Name: LegendVisible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Class: Reference
+      Target: ns=3;i=573
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 150.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Zoom
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 2.0
+    - Name: CenterX
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: CenterY
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: -100.0
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Switch1/Checked"
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+  - Name: XYChart2
+    Type: XYChart
+    Children:
+    - Name: Pens
+      Type: BaseObjectType
+      Children:
+      - Name: ArrayLinePen1
+        Type: XYChartArrayLinePen
+        Children:
+        - Name: PointArray
+          Type: BaseDataVariableType
+          DataType: Number
+          ValueRank: 2
+          ArrayDimensions: [0,0]
+          Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+      - Name: ScaleLinePen1
+        Type: XYChartScalarLinePen
+        Children:
+        - Name: X
+          Type: BaseDataVariableType
+          DataType: Number
+          Value: {"Type":11,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../XValue/Value"
+        - Name: Y
+          Type: BaseDataVariableType
+          DataType: Number
+          Value: {"Type":11,"Body":0.0}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../YValue/Value"
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#0000ff"
+    - Name: LegendVisible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../KeyVisibleValue/Checked"
+    - Class: Reference
+      Target: ns=3;i=573
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      Value: 420.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../WidthValue/Text"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      Value: 400.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../HeightValue/Text"
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      Value: 250.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../BottomMarginValue/Text"
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      Value: 50.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../RightMarginValue/Text"
+    - Name: CenterX
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1000000100.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../CenterXValue/Text"
+    - Name: Zoom
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../ZoomValue/Text"
+    - Name: CenterY
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../CenterYValue/Text"
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EnabledVaule/Checked"
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      Value: 100.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../OpacityValue/Text"
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../RotationValue/Text"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../VisibleValue/Checked"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../LeftMarginValue/Text"
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../TopMarginValue/Text"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      Value: 1
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../HorizontalAlignmentValue/Value"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      Value: 1
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../VerticalAlignmentValue/Value"
+  - Name: Switch1
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 505.0
+  - Name: Zoom
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Zoom"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 555.0
+  - Name: CenterX
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"CenterX"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+  - Name: CenterY
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"CenterY"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+  - Name: Visible
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Visible"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 645.0
+  - Name: Enabled
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Enabled"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 555.0
+  - Name: Opacity
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Opacity"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+  - Name: Rotation
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Rotation"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+  - Name: KeyVisible
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"KeyVisible"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 230.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 645.0
+  - Name: HorizontalAlignment
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"HorizontalAlignment"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 470.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 555.0
+  - Name: VerticalAlignment
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"VerticalAlignment"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 470.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+  - Name: ChartWidth
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"ChartWidth"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 470.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+  - Name: ChartHeight
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"ChartHeight"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 470.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 645.0
+  - Name: LeftMargin
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"LeftMargin"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 750.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 555.0
+  - Name: TopMargin
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"TopMargin"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 750.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+  - Name: RightMargin
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"RightMargin"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 750.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+  - Name: BottomMargin
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"BottomMargin"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 750.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 645.0
+  - Name: ZoomValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"1"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 550.0
+  - Name: CenterXValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"0"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 580.0
+  - Name: CenterYValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"0"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 610.0
+  - Name: OpacityValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"100"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 310.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 580.0
+  - Name: RotationValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"0"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 310.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 610.0
+  - Name: WidthValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"400"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 610.0
+  - Name: HeightValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"400"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 640.0
+  - Name: LeftMarginValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"0"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 830.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 550.0
+  - Name: TopMarginValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"0"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 830.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 580.0
+  - Name: RightMarginValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"50"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 830.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 610.0
+  - Name: BottomMarginValue
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"250"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 830.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 640.0
+  - Name: VisibleValue
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 640.0
+  - Name: EnabledVaule
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 310.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 550.0
+  - Name: KeyVisibleValue
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 310.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 640.0
+  - Name: HorizontalAlignmentValue
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 550.0
+  - Name: VerticalAlignmentValue
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 600.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 580.0
+  - Name: XValue
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: Increment
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1030.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 550.0
+  - Name: YValue
+    Type: SpinBox
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: Increment
+      Type: BaseDataVariableType
+      DataType: Double
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1030.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 580.0
+  - Name: X_Value
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"X_Value"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 980.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 555.0
+  - Name: Y_Value
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Y_Value"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 980.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Switch1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 510.0
